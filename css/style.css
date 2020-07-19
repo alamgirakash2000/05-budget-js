@@ -1,0 +1,77 @@
+body{
+    font-size: 80% ;
+}
+header{
+    background: url(../img/back.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.overlay{
+    background: rgba(0, 0, 0, 0.7);
+    min-height: 300px;
+}
+.income{
+    background: rgb(23, 179, 179);
+    margin: 0 auto;
+    width : 400px;
+}
+.percent{
+    background: rgba(194, 16, 16, 0.267);
+    margin : 0 0.5rem;
+}
+.bg-light{
+    border-bottom: 1px solid gainsboro ;
+}
+.add-button{
+    border: none;
+    background: none;
+    color: skyblue;
+}
+input,select{
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+    color: inherit;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 12px 15px;
+    margin-right: 10px;
+    border-radius: 5px;
+    transition: border 0.3s;
+}
+input:hover{
+    border: 1px solid skyblue;
+    background-color: #fff;
+    color: inherit;
+}
+.cross-button{
+    border: none;
+    background: none;
+    color: red;
+    margin-left: 2rem;
+    display: none;
+    transition: all 0.4s ease-in;
+}
+#income-table div,#expense-table div{
+    font-size: 150%;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding: .3rem 0.5rem;
+    margin: 1rem 0;
+    background-color: honeydew;
+}
+#income-table div:hover .cross-button,#expense-table div:hover .cross-button{
+    display: inline;
+}
+
+
+@media only screen and (max-width: 500px){
+    .income{
+
+        width : 100%;
+    }
+    .m-percent{
+        display: none;
+    }
+}
