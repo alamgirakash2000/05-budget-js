@@ -1,5 +1,6 @@
 'use strict'
 
+document.querySelector('#month').textContent=moment().format("MMMM, YYYY")
 
 let incomes= []
 let expenses= []
